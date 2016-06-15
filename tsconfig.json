@@ -1,0 +1,16 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "noLib": false,
+    "sourceMap": true,
+    "rootDir": "ts",
+    "outDir": "src",
+    "forceConsistentCasingInFileNames": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
