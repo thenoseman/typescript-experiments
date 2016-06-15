@@ -10,7 +10,7 @@
     "outDir": "src",
     "forceConsistentCasingInFileNames": true
   },
-  "files": [
-    "ts/app.ts"
+  "exclude": [
+    "node_modules"
   ]
 }
