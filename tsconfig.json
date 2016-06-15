@@ -1,8 +1,8 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "target": "es6",
+    "module": "es2015",
     "removeComments": true,
     "noLib": false,
     "sourceMap": true,
@@ -10,7 +10,7 @@
     "outDir": "src",
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "node_modules"
+  "files": [
+    "ts/app.ts"
   ]
 }
