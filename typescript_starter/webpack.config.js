@@ -1,7 +1,14 @@
+/*eslint-env node */
+var path = require("path");
+
 module.exports = {
-  entry: './ts/app.ts',
+  entry: {
+    app: ['./ts/app.ts']
+  },
   output: {
-    filename: 'src/bundle.js'
+    path: path.resolve(__dirname, "app/js"),
+    filename: 'app.js',
+    publicPath: "/js/"
   },
   resolve: {
     extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
@@ -10,5 +17,10 @@ module.exports = {
     loaders: [
       { test: /\.tsx?$/, loader: 'ts-loader' }
     ]
+  },
+  devServer: {
+    hot: true,
+    inline: true,
+    contentBase: "app"
   }
-}
+};

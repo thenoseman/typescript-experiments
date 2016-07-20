@@ -1,3 +1,6 @@
-let a = function(text: string): number { return 42; };
+import Message = require("./dingens");
 
-a("ahallo");
+let message = new Message("wubbel");
+
+console.log(message.message);
+

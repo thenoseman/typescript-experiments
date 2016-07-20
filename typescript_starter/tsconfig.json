@@ -1,8 +1,8 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
-    "module": "es2015",
+    "target": "es5",
+    "module": "commonjs",
     "removeComments": true,
     "noLib": false,
     "sourceMap": true,
